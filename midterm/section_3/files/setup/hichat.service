@@ -1,0 +1,14 @@
+[UNIT]
+Description=HiChat app, midterm
+After=network.target
+
+[Service]
+Environment=NODE_PORT=8080
+WorkingDirectory=/home/hichat/app
+Type=simple
+User=hichat
+ExecStart=/user/bin/node /home/hichat/app/server.js
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

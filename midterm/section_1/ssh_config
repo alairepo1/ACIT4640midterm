@@ -1,0 +1,15 @@
+#midterm
+Host midterm
+	Hostname 127.0.0.1
+	Port 12922
+	user midterm
+	IdentityFile ~/.ssh/midterm_id_rsa
+	StrictHostKeyChecking no
+	UserKnownHostsFile=/dev/null
+
+#ACIT4640 Provisioning Midterm bonus
+Host bonus
+	Hostname 127.0.0.1
+	Port 9022
+	user admin
+	IdentityFile ~/.ssh/midterm_exam_bonus_id_rsa
